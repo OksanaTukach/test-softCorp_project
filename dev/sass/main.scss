@@ -1,0 +1,14 @@
+@import 'smart-grid';
+@import './utils/variables';
+@import './utils/fonts';
+@import './utils/reset';
+@import './utils/common';
+
+
+// Модули
+@import './modules/header';
+@import './modules/main-screen';
+@import './modules/footer';
+@import './modules/btn';
+@import './modules/order';
+@import './modules/form';

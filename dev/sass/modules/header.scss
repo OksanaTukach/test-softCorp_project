@@ -1,0 +1,105 @@
+.header{
+	padding: 32px 15px;
+	background: rgba(16, 16, 29, 0.9);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	@include xxs-block(){
+		padding: 15px 5px;
+	}
+	&__logo {
+		font-family: "raleway";
+		font-weight: 800;
+		font-size: 28px;
+		text-transform: uppercase;
+		color: $white;
+		&_blue {
+			color: $blue;
+			font-size: 28px;
+		}
+		@include xxs-block() {
+			font-size: 20px;
+		}
+	}
+	&__menu {
+		display: flex;
+		@include xs-block() {
+			display: none;
+		}
+		
+		&_open {
+			@include xs-block(){
+				display: block;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100vw;
+				background-color: $bg-block;
+				display: block;
+				padding: 15px;
+			}
+			li {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		
+		
+		.menu__item {
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 16px;
+			color: $white;
+			text-transform: uppercase;
+			margin-left: 60px;
+			transition: color 0.3s;
+			&_active {
+				color: $blue;
+			}
+			&:hover {
+				color: $blue-dark;
+			}
+			@include xs-block(){
+				font-size: 20px;
+				margin: 20px 0 0 0;
+				text-align: center;
+			}
+		}
+	}
+	&__burger {
+		display: none;
+		@include xs-block(){
+			display:block;
+			cursor: pointer;
+
+		}
+		&_close {
+			span:nth-child(1) {
+				transform: rotate(45deg) translate(3px,-3px);
+			}
+			span:nth-child(2) {
+				transform: scaleX(0);
+			}
+			span:nth-child(3) {
+				transform: rotate(-45deg) translate(2px,2px);
+			}
+			@include xs-block(){
+				display:block;
+	
+			}
+		}
+		span {
+			background-color: $blue;
+			width:20px;
+			height: 2px;
+			margin: 5px 0;
+			display: block;
+			transition: all .4s ease;
+			transform-origin: 0 0;
+			border-radius: 10px;
+		}
+	}
+}

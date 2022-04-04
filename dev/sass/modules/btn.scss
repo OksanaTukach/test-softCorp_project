@@ -1,0 +1,40 @@
+.btn {
+    padding: 15px 31px;
+    width: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border;
+    border-radius: 4px;
+    background-color: white;
+    transition: 0.3s;
+    span {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        min-width: 120px;
+        text-transform: uppercase;
+        color: $btn-text;
+        transition: 0.3s;
+        text-align: center;
+    }
+    &:hover {
+        background-color: rgba(16, 16, 29, 0.5);
+        border-color: $white;
+        span {
+            color: $white;
+        }
+    }
+    &_blue {
+        border: 1px solid $white;
+        background-color: $blue;
+        span {
+            color: $white;
+        }
+        &:hover {
+            background-color: $blue-dark;
+            border-color: $border;
+        }
+    }
+    
+}

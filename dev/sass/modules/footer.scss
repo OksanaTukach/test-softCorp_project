@@ -1,0 +1,115 @@
+.footer{
+	background-color: $bg-block;
+	display: flex;
+	padding: 30px 15px;
+	justify-content: center;
+	@include xmd-block() {
+		padding: 10px 15px;
+	}
+	&__payment-systems {
+		display: flex;
+		padding-right: 40px;
+		border-right: 1px solid $border-light;
+		margin-right: 40px;
+		position: relative;
+		&:after {
+			@include xmd-block() {
+				position: absolute;
+				content:'';
+				width: 50px;
+				height: 1px;
+				background-color: $border-light;
+				bottom: -10px;
+			}
+		}
+		@include xmd-block() {
+			width: 100%;
+			padding: 0;
+			margin-right:0 ;
+			justify-content: center;
+			border: none;
+			flex-wrap: wrap;
+			
+			
+			
+		}
+	}
+	&__contact {
+		display: flex;
+		@include xmd-block() {
+			width: 100%;
+			padding: 0;
+			margin-right:0 ;
+			justify-content: center;
+			margin-top: 10px;
+			border: none;
+			flex-wrap: wrap;
+		}
+		position: relative;
+		&:after {
+			@include xmd-block() {
+				position: absolute;
+				content:'';
+				width: 50px;
+				height: 1px;
+				background-color: $border-light;
+				bottom: -10px;
+			}
+		}
+		a span {
+			color: $white;
+		}
+		a:hover span {
+			color: $blue-dark;
+		}
+	}
+	&__copyright {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 16px;
+		color: #FFFFFF;
+		padding-right: 40px;
+		border-right: 1px solid $border-light;
+		margin-right: 40px;
+		@include xmd-block() {
+			width: 100%;
+			padding: 0;
+			margin-right:0 ;
+			text-align: center;
+			margin-top: 20px;
+			border: none;
+			order: 3;
+		}
+		@include xs-block(){
+			padding: 0 10px;
+		}
+	}
+	&__elem {
+		display: flex;
+		align-items: center;
+		margin-right: 38px;
+		.icon {
+			width: 20px;
+			height: 20px;
+			fill: $blue;
+			margin-right: 10px;
+		}
+		span {
+			color: $border-light;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 16px;
+			transition: color 0.3s;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		@include xmd-block(){
+			margin-top: 10px;
+		}
+		@include xs-block(){
+			margin-right: 0;
+			padding: 0 10px;
+		}
+	}
+}

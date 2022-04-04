@@ -1,0 +1,12 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная';
+
+block content
+	include ../modules/header
+	main
+		include ../modules/main-screen
+		include ../modules/order
+
+	include ../modules/footer

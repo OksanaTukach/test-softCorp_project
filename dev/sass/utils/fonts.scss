@@ -1,0 +1,62 @@
+/*---------------------------------------------------------------FONTS---------------------------------------------------------------*/
+@font-face {
+	font-family: "raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-display: block;
+
+	src: 	url("../fonts/Raleway/Raleway-ExtraBold.woff2") format("woff2"),
+	url("../fonts/montserat/Raleway-ExtraBold.woff") format("woff"),
+	url("../fonts/montserat/Raleway-ExtraBold.ttf") format("truetype"),
+	url("../fonts/montserat/Raleway-ExtraBold.eot");
+}
+
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: 700;
+	font-display: block;
+
+	src: 	url("../fonts/lato/lato-bold/Lato-Bold.woff2") format("woff2"),
+	url("../fonts/lato/lato-bold/Lato-Bold.woff") format("woff"),
+	url("../fonts/lato/lato-bold/Lato-Bold.ttf") format("truetype"),
+	url("../fonts/lato/lato-bold/Lato-Bold.eot");
+}
+
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: 800;
+	font-display: block;
+
+	src: 	url("../fonts/lato/lato-extrabold/Lato-ExtraBold.woff2") format("woff2"),
+	url("../fonts/lato/lato-extrabold/Lato-ExtraBold.woff") format("woff"),
+	url("../fonts/lato/lato-extrabold/Lato-ExtraBold.ttf") format("truetype"),
+	url("../fonts/lato/lato-extrabold/Lato-ExtraBold.eot");
+}
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+
+
+	src: 	url("../fonts/lato/lato-regular/Lato-Regular.woff2") format("woff2"),
+	url("../fonts/lato/lato-regular/Lato-Regular.woff") format("woff"),
+	url("../fonts/lato/lato-regular/Lato-Regular.ttf") format("truetype"),
+	url("../fonts/lato/lato-regular/Lato-Regular.eot");
+}
+
+
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+
+
+	src: 	url("../fonts/lato/lato-semibold/Lato-SemiBold.woff2") format("woff2"),
+	url("../fonts/lato/lato-semibold/Lato-SemiBold.woff") format("woff"),
+	url("../fonts/lato/lato-semibold/Lato-SemiBold.ttf") format("truetype"),
+	url("../fonts/lato/lato-semibold/Lato-SemiBold.eot");
+}

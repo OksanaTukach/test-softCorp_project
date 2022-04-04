@@ -1,0 +1,106 @@
+.main-screen {
+    background-image: url(../img/content/main-screen.png);
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include xs-block(){
+        position: relative;
+        align-items: flex-end;
+    }
+    &::before {
+        @include xs-block() {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(16, 16, 29, 0.3);
+            z-index: 1;
+        }
+    }
+    &__information {
+        padding: 100px 0 200px;
+        @include xs-block() {
+            position: relative;
+            z-index: 2;
+            padding: 50px 0 100px;
+        }
+        @include xxs-block() {
+            padding: 80px 0 40px;
+        }
+        .text {
+            &__title  {
+                font-family: "raleway";
+                font-weight: 800;
+                font-size: 48px;
+                color: $black;
+                text-transform: uppercase;
+                line-height: 58px;
+                margin-bottom: 78px;
+                @include xs-block(){
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                @include xxs-block(){
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 30px;
+                }
+                
+                &_blue {
+                    color: $blue;
+                }
+            }
+            &__list {
+                &_name {
+                    margin-bottom: 11px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $black;
+                }
+                &_elem {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $black;
+                    position: relative;
+                    padding-left: 26px;
+                    &::before {
+                        content: '-';
+                        position: absolute;
+                        left: 10px;
+
+                    }
+                }
+            }
+        }
+        
+    }
+    &__btns {
+        margin-top: 80px;
+        display: flex;
+        @include xxs-block(){
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .btn {
+            @include xxs-block(){
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+        .btn_blue {
+            margin-right: 30px;
+            @include xxs-block(){
+                margin-right: 0;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,86 @@
+.order
+    .container.container_block
+        .order__title Оформление 
+            span.text_blue Заказа
+        .order__info Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        .order__points 
+            .order__points_scroll
+                .order__point 
+                    .image 
+                        img(src="./img/content/order__point1.svg")
+                    .desc Lorem ipsum dolorsit amet
+                    .circles 
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                .order__point 
+                    .image 
+                        img(src="./img/content/order__point2.svg")
+                    .desc Сonsecteturadipiscing elit
+                    .circles 
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                .order__point 
+                    .image 
+                        img(src="./img/content/order__point3.svg")
+                    .desc Sed do eiusmod tempor
+                    .circles 
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                .order__point 
+                    .image 
+                        img(src="./img/content/order__point4.svg")
+                    .desc Esse cillum doloreeu fugiat
+                    .circles 
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                .order__point 
+                    .image 
+                        img(src="./img/content/order__point5.svg")
+                    .desc Excepteur sint occaecat cupidatat non proident
+                    .circles 
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+                        .circles__elem
+        form.order__form
+            .form__item
+                select.styler(name="type")
+                    option(disabled selected value="Not selected") Выберите тип системы
+                    option Sed ut perspiciatis
+                    option Nemo enim ipsam
+                    option Et harum quidem
+                    option Temporibus autem
+                    option Itaque earum rerum
+                    option Et harum quidem
+                    option Temporibus autem
+                    option Itaque earum rerum
+            .form__item
+                input(type="email" name="email" placeholder="Ваш e-mail")
+            .form__item
+                input(type="text" name="name" placeholder="Ваше имя")
+            .form__item.form__item_w50
+                .form__item_value 
+                    .title Sed ut perspiciatis, unde omnis iste natus
+                    .value
+                .slider
+            .form__item.form__item_document
+                input(type="file" name="document")
+                +icon('document')
+                span Прикрепить файл
+            .form_btn
+                .form__item.form__item_btn
+                    button(type="submit").btn.btn_blue Отправить
+        

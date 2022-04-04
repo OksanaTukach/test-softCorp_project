@@ -1,0 +1,47 @@
+
+body {
+	font-family: $font;
+	font-weight: 400;
+	overflow: visible;
+	overflow-x: hidden;
+	line-height: 160%;
+	font-size: toVw($fontSizeMain);
+	margin: 0;
+	color: $black;
+	&._overflow{
+		overflow: hidden;
+	}
+}
+.container {
+	width: 1172px;
+	display: flex;
+	justify-content: space-between;
+	&_block {
+		display: block;
+	}
+	@include xmd-block() {
+		width: 760px;
+		flex-wrap: wrap;
+	}
+	@include xmd-block() {
+		width: 760px;
+		flex-wrap: wrap;
+	}
+	@include xs-block() {
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+main{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	transition: .2s;
+	color: #131313;
+}
+.text_blue {
+	color: $blue !important;
+}
